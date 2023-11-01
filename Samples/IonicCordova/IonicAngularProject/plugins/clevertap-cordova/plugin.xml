@@ -77,14 +77,7 @@
                 </intent-filter>
             </service>
             
-            <service
-                android:name="com.clevertap.android.sdk.pushnotification.CTNotificationIntentService"
-                android:exported="false">
-                <intent-filter>
-                    <action android:name="com.clevertap.PUSH_EVENT"/>
-                </intent-filter>
-            </service>
-
+            
             <meta-data android:name="CLEVERTAP_ACCOUNT_ID" android:value="$CLEVERTAP_ACCOUNT_ID" />
             <meta-data android:name="CLEVERTAP_TOKEN" android:value="$CLEVERTAP_TOKEN" />
             <meta-data android:name="CLEVERTAP_REGION" android:value="$CLEVERTAP_REGION" />
