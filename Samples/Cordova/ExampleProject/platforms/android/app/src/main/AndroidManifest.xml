@@ -8,11 +8,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:exported="true" android:name="com.clevertap.android.sdk.pushnotification.fcm.FcmMessageListenerService">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
+        
         
         <meta-data android:name="CLEVERTAP_ACCOUNT_ID" android:value="YOUR_ACCT_ID" />
         <meta-data android:name="CLEVERTAP_TOKEN" android:value="YOUR_ACCT_TOKEN" />

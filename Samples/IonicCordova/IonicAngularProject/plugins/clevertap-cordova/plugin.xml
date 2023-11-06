@@ -70,12 +70,7 @@
         </config-file>
 
 		<config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <service
-                android:name="com.clevertap.android.sdk.pushnotification.fcm.FcmMessageListenerService">
-                <intent-filter>
-                    <action android:name="com.google.firebase.MESSAGING_EVENT"/>
-                </intent-filter>
-            </service>
+            
             
             
             <meta-data android:name="CLEVERTAP_ACCOUNT_ID" android:value="$CLEVERTAP_ACCOUNT_ID" />

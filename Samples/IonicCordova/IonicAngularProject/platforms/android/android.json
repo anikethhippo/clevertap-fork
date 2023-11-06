@@ -102,10 +102,7 @@
             }
           ],
           "/manifest/application": [
-            {
-              "xml": "<service android:name=\"com.clevertap.android.sdk.pushnotification.fcm.FcmMessageListenerService\"><intent-filter><action android:name=\"com.google.firebase.MESSAGING_EVENT\" /></intent-filter></service>",
-              "count": 1
-            },
+            
             {
               "xml": "<meta-data android:name=\"CLEVERTAP_ACCOUNT_ID\" android:value=\"W9R-486-4W5Z\" />",
               "count": 1
