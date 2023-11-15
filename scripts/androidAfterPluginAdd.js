@@ -44,15 +44,15 @@ module.exports = function(context) {
         var jsonContents = JSON.parse(fileContents);
         var s = fs.readFileSync("platforms/android/app/src/main/res/values/strings.xml").toString();
 
-        s = s.replace(new RegExp('<string name="google_app_id">([^\@<]+?)<\/string>', "i"), '')
+        //s = s.replace(new RegExp('<string name="google_app_id">([^\@<]+?)<\/string>', "i"), '')
 
-        s = s.replace(new RegExp('<string name="google_api_key">([^\@<]+?)<\/string>', "i"), '')
+        //s = s.replace(new RegExp('<string name="google_api_key">([^\@<]+?)<\/string>', "i"), '')
 
         s = s.replace(new RegExp('(\r\n|\n|\r)[ \t]*(\r\n|\n|\r)', "gm"), '$1')
 
-        s = s.replace(new RegExp('</resources>', "i"), '<string name="google_app_id">' + jsonContents.client[0].client_info.mobilesdk_app_id + '</string>\n</resources>')
+        //s = s.replace(new RegExp('</resources>', "i"), '<string name="google_app_id">' + jsonContents.client[0].client_info.mobilesdk_app_id + '</string>\n</resources>')
 
-        s = s.replace(new RegExp('</resources>', "i"), '<string name="google_api_key">' + jsonContents.client[0].api_key[0].current_key + '</string>\n</resources>')
+        //s = s.replace(new RegExp('</resources>', "i"), '<string name="google_api_key">' + jsonContents.client[0].api_key[0].current_key + '</string>\n</resources>')
 
         fs.writeFileSync("platforms/android/app/src/main/res/values/strings.xml", s);
       } catch (err) {
